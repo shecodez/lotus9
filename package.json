@@ -2,15 +2,25 @@
   "name": "lotus9",
   "private": true,
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "build": "nuxi build",
+    "dev": "nuxi dev",
+    "start": "node .output/server/index.mjs",
+    "lint": "eslint .",
+    "generate": "nuxi generate",
+    "preview": "nuxi preview",
+    "postinstall": "nuxi prepare"
   },
   "devDependencies": {
+    "@iconify/json": "^2.2.89",
     "@nuxt/devtools": "latest",
+    "@nuxtjs/color-mode": "^3.3.0",
     "@types/node": "^18.16.19",
-    "nuxt": "^3.6.2"
+    "@unocss/eslint-config": "^0.53.5",
+    "@unocss/nuxt": "^0.53.5",
+    "@vueuse/nuxt": "^10.2.1",
+    "eslint": "^8.44.0",
+    "nuxt": "^3.6.2",
+    "typescript": "^5.1.6",
+    "vite-plugin-purge-icons": "^0.9.2"
   }
 }

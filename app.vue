@@ -1,5 +1,12 @@
+<script setup>
+
+</script>
+
 <template>
-  <div>
-    <h1>Hello, World! ~ Lotus9 🪷</h1>
+  <div container mx-auto>
+    <h1 text-center>Hello, World! ~ <span text-green-4>Lotus9</span> 🪷</h1>
+  <Footer />
   </div>
 </template>
+
+
