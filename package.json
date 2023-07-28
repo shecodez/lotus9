@@ -4,6 +4,7 @@
   "scripts": {
     "build": "nuxi build",
     "dev": "nuxi dev",
+    "dev-ssl": "NODE_TLS_REJECT_UNAUTHORIZED=0 nuxi dev --https --ssl-cert certs/localhost.pem --ssl-key certs/localhost-key.pem",
     "start": "node .output/server/index.mjs",
     "lint": "eslint .",
     "generate": "nuxi generate",
@@ -14,6 +15,7 @@
     "@iconify/json": "^2.2.89",
     "@nuxt/devtools": "latest",
     "@nuxtjs/color-mode": "^3.3.0",
+    "@storyblok/nuxt": "^5.5.2",
     "@types/node": "^18.16.19",
     "@unocss/eslint-config": "^0.53.5",
     "@unocss/nuxt": "^0.53.5",

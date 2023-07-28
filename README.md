@@ -58,6 +58,10 @@ pnpm run preview
 
 # yarn
 yarn preview
+
+#https
+local-ssl-proxy --source 3010 --target 3000 --cert certs/localhost.pem --key certs/localhost-key.pem
+
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

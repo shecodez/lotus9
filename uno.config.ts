@@ -12,14 +12,25 @@ import {
 export default defineConfig({
   shortcuts: [
     ['btn', 'cursor-pointer inline-block opacity-75 transition duration-200 ease-in-out hover:opacity-100 disabled:cursor-default disabled:bg-gray disabled:opacity-50'],
-    ['primary-btn', 'bg-primary px-4 py-1 rounded-full'],
-    ['icon-btn', ' hover:text-primary'],
+    ['btn-primary', 'bg-primary px-4 py-1 rounded-full'],
+    ['btn-icon', ' hover:text-primary'],
   ],
   theme: {
     colors: {
       light: "#e6e1de",
       dark: "#0f0c13",
-      primary: "#ff6b6b",
+      primary: {
+        DEFAULT: "#ff6b6b",
+        //"50": "",
+        //"100": "",
+        //"200": "",
+        //"300": "",
+        //"400": "",
+        //"500": "#ff6b6b",
+        //"700": "",
+        //"800": "",
+        //"900": ""
+      },
       secondary: "#00bfba",
       accent: "#ff9c4a"     
     }
@@ -32,10 +43,11 @@ export default defineConfig({
     }),
     presetTypography(),
     presetWebFonts({
+      provider: 'google', // default provider
       fonts: {
-        sans: 'DM Sans',
-        serif: 'DM Serif Display',
-        mono: 'DM Mono',
+        sans: ['Open Sans', 'Open Sans:400,700'],
+        display: ['Dosis', 'Dosis:400,700'],
+        mono: ['Fira Code', 'Fira Mono:400,700'],
       },
     }),
   ],
